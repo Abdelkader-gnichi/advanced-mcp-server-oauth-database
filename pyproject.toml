@@ -5,8 +5,12 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "authlib>=1.6.4",
+    "fastmcp>=2.12.3",
     "httpx>=0.28.1",
     "mcp[cli]>=1.14.1",
     "psycopg[binary]>=3.2.10",
     "python-decouple>=3.8",
+    "sqlmodel>=0.0.25",
+    "stytch>=13.23.0",
 ]
