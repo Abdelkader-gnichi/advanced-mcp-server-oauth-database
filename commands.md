@@ -30,7 +30,19 @@ uv run ./main.py
 
 
 
-
+# add mcp server to claude code
 ```bash
+claude mcp add --transport http notes https://f2rjbkkw8ycg.share.zrok.io/mcp
+```
 
+
+# create the frontend project using vite
+```bash
+npm create vite@latest -- frontend
+```
+
+
+# install recat stytch library
+```bash
+npm install @stytch/react @stytch/vanilla-js --save
 ```

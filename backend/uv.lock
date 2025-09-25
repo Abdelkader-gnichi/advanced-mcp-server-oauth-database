@@ -13,6 +13,7 @@ dependencies = [
     { name = "mcp", extra = ["cli"] },
     { name = "psycopg", extra = ["binary"] },
     { name = "python-decouple" },
+    { name = "python-dotenv" },
     { name = "sqlmodel" },
     { name = "stytch" },
 ]
@@ -25,6 +26,7 @@ requires-dist = [
     { name = "mcp", extras = ["cli"], specifier = ">=1.14.1" },
     { name = "psycopg", extras = ["binary"], specifier = ">=3.2.10" },
     { name = "python-decouple", specifier = ">=3.8" },
+    { name = "python-dotenv", specifier = ">=1.1.1" },
     { name = "sqlmodel", specifier = ">=0.0.25" },
     { name = "stytch", specifier = ">=13.23.0" },
 ]

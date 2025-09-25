@@ -1,9 +1,9 @@
 {
-	"servers": {
-		"advanced-mcp-server-oauth-database": {
-			"url": "https://f2rjbkkw8ycg.share.zrok.io/mcp",
-			"type": "http"
-		}
-	},
-	"inputs": []
+  "servers": {
+    "advanced-mcp-server-oauth-database": {
+      "url": "https://f2rjbkkw8ycg.share.zrok.io/mcp",
+      "type": "http"
+    }
+  },
+  "inputs": []
 }
