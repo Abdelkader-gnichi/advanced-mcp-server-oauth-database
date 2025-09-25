@@ -7,7 +7,7 @@ from starlette.responses import JSONResponse
 from fastmcp.server.auth import BearerAuthProvider
 from fastmcp.server.dependencies import get_access_token, AccessToken
 from database import NoteRepository
-import jwt
+from authlib.jose import jwt
 import os
 
 load_dotenv()
@@ -19,7 +19,7 @@ auth = BearerAuthProvider(
     audience=os.getenv("STYTCH_PROJECT_ID")
 )
 
-mcp = FastMCP(name="Notes App", auth=auth)
+mcp = FastMCP(name="notes", auth=auth)
 
 @mcp.tool()
 def get_my_notes() -> str:
@@ -50,8 +50,9 @@ def add_note(content: str) -> str:
 # OAuth Protected Resource Discovery
 @mcp.custom_route("/.well-known/oauth-protected-resource", methods=["GET", "OPTIONS"])
 def oauth_metadata(request: StarletteRequest) -> JSONResponse:
+    print(request.base_url)
     base_url = str(request.base_url).rstrip("/")
-
+    print(base_url)
     return JSONResponse(
         {
             "resource": base_url,
