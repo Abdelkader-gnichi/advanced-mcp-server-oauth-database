@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "notes": {
+      "command": "uv",
+      "args": ["run", "backend.main:mcp", "--port", "8000"],
+      "url": " https://33881f5c615d.ngrok-free.app/mcp",
+      "authorizationUrl": " https://33881f5c615d.ngrok-free.app/.well-known/oauth-protected-resource"
+    }
+  }
+}
